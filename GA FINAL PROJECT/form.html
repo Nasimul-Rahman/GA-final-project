@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='CSS/form.css'>
+</head>
+<body>
+    <header>
+        <div class='left_side'>
+            <img src="img/logo.png">
+            <a href="">Donate</a>
+            <a href="">News</a>
+            <a href="index.html">Home</a>
+          </div>
+          <div>
+            <a href="#">Log in</a>
+            <a href="#">Sign in</a>
+          </div>
+    </header>
+
+    <section class="form">
+        <div class="form_box">
+            <form id="application-form">
+                <h1>Fundraiser Application</h1>
+                <label for="fname">Fundraiser Name</label>
+                <input type="text" id="fname" name="fname" placeholder="fundraiser name...">
+        
+                <label for="country">Fundraiser Type</label>
+                <select id="country" name="country" >
+                    <option value="other">Other</option>
+                    <option value="Educational">Educational</option>
+                    <option value="Health">Health</option>
+                    <option value="Environemntal">Environemntal</option>
+                    <option value="Animal">Animal</option>
+                    <option value="Art and Culture">Art and Culture</option>
+                    <option value="NGO">NGO</option>
+                </select>
+
+                <label for="fgoal">Fundraiser Goal</label>
+                <input type="text" id="fgoal" name="fgoal" placeholder="Your goal...">
+
+                <label for="about">About Your Fundraiser</label>
+                <textarea name="about" id="about"></textarea>
+
+                <ul id="errors"></ul>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <script src='form.js'></script>
+</body>
+</html>
